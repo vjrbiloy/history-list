@@ -32,7 +32,7 @@
                 <tr>
                     <th>User ID</th>
                     <th>Username</th>
-                    <th>Total Active User's Amount</th>
+                    <th>Total User's Amount</th>
                     <th>Last History Date Time</th>
                 </tr>
             </thead>
@@ -41,7 +41,7 @@
                     <tr>
                         <td><?php echo $item['user_id'];?></td>
                         <td><?php echo $item['username'];?></td>
-                        <td><?php echo $item['total_active_user_amount'];?></td>
+                        <td><?php echo $item['total_user_amount'];?></td>
                         <td><?php echo $item['last_history_datetime'];?></td>
                     </tr>
                 <?php } ?>

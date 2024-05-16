@@ -121,7 +121,7 @@ function getHistories($country = "all", $datetimeFrom, $datetimeTo){
 
 function getHistoriesByCountryAndDate($country = "Malaysia", $username = "", $datetimeFrom, $datetimeTo){
     $sql = "SELECT u.user_id, u.username,
-		SUM(IF(`h`.`active` = 1, h.amount, 0)) AS `total_active_user_amount`,
+		SUM(h.amount) AS `total_user_amount`,
 		MAX(`h`.`datetime`) AS `last_history_datetime`
 		FROM users AS u
 		LEFT JOIN histories AS h ON u.user_id = h.user_id AND h.active = 1
